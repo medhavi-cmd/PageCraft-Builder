@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap');
+
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  color: #0f172a;
+  background-color: rgb(3, 3, 55);
+}
+
+.btn {
+  @apply w-full rounded-xl border border-slate-200/80 bg-white/90 p-3 text-left text-sm font-medium text-slate-700 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-300 hover:bg-blue-50/70 hover:text-blue-900 hover:shadow;
+}
+
+.markdown-preview {
+  font-family: 'Source Serif 4', Georgia, serif;
+  line-height: 1.75;
+  color: #334155;
+}
+
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  font-family: 'Outfit', system-ui, sans-serif;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.markdown-preview p {
+  margin: 0 0 0.75rem;
+}
+
+.markdown-preview a {
+  color: #0f766e;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.markdown-preview ul,
+.markdown-preview ol {
+  margin: 0.5rem 0 0.75rem 1.2rem;
+}
+
+.markdown-preview code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+  background-color: #dbeafe;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.88em;
+  color: #0f172a;
+}
+
+.markdown-preview pre {
+  overflow-x: auto;
+  padding: 0.85rem;
+  border-radius: 0.8rem;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+.markdown-preview pre code {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+}
